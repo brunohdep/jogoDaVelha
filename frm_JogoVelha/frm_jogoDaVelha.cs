@@ -41,7 +41,7 @@ namespace frm_JogoVelha
                 bt1.Text = jogada;
                 bt1.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -53,7 +53,7 @@ namespace frm_JogoVelha
                 bt1.Text = jogada;
                 bt1.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -69,7 +69,7 @@ namespace frm_JogoVelha
                 bt2.Text = jogada;
                 bt2.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -81,7 +81,7 @@ namespace frm_JogoVelha
                 bt2.Text = jogada;
                 bt2.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -97,7 +97,7 @@ namespace frm_JogoVelha
                 bt3.Text = jogada;
                 bt3.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -109,7 +109,7 @@ namespace frm_JogoVelha
                 bt3.Text = jogada;
                 cont++;
                 bt3.Enabled = false;
-                if (cont >= 5)
+                if (cont >5)
                 {
                     Vencedor();
                 }
@@ -125,7 +125,7 @@ namespace frm_JogoVelha
                 bt4.Text = jogada;
                 bt4.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -137,7 +137,7 @@ namespace frm_JogoVelha
                 bt4.Text = jogada;
                 bt4.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -154,7 +154,7 @@ namespace frm_JogoVelha
                 bt5.Text = jogada;
                 bt5.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -166,7 +166,7 @@ namespace frm_JogoVelha
                 bt5.Text = jogada;
                 bt5.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -183,7 +183,7 @@ namespace frm_JogoVelha
                 bt6.Text = jogada;
                 bt6.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -195,7 +195,7 @@ namespace frm_JogoVelha
                 bt6.Text = jogada;
                 bt6.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -211,7 +211,7 @@ namespace frm_JogoVelha
                 bt7.Text = jogada;
                 bt7.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -223,7 +223,7 @@ namespace frm_JogoVelha
                 bt7.Text = jogada;
                 bt7.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -239,7 +239,7 @@ namespace frm_JogoVelha
                 bt8.Text = jogada;
                 bt8.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -251,7 +251,7 @@ namespace frm_JogoVelha
                 bt8.Text = jogada;
                 bt8.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -267,7 +267,7 @@ namespace frm_JogoVelha
                 bt9.Text = jogada;
                 bt9.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -279,7 +279,7 @@ namespace frm_JogoVelha
                 bt9.Text = jogada;
                 bt9.Enabled = false;
                 cont++;
-                if (cont >= 5)
+                if (cont > 5)
                 {
                     Vencedor();
                 }
@@ -300,7 +300,11 @@ namespace frm_JogoVelha
         {
             if ((bt1.Text.Equals(bt2.Text)) && (bt2.Text.Equals(bt3.Text)))
             {
-                if (bt1.Text.Equals(tip1))
+                Console.WriteLine("entrou1");
+                if (bt1.Text.Equals(""))
+                {
+
+                }else if (bt1.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -315,7 +319,12 @@ namespace frm_JogoVelha
             }
             else if ((bt4.Text.Equals(bt5.Text)) && (bt5.Text.Equals(bt6.Text)))
             {
-                if (bt4.Text.Equals(tip1))
+                Console.WriteLine("entrou2");
+                if (bt4.Text.Equals(""))
+                {
+
+                }
+                else if(bt4.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -330,7 +339,12 @@ namespace frm_JogoVelha
             }
             else if ((bt7.Text.Equals(bt8.Text)) && (bt8.Text.Equals(bt9.Text)))
             {
-                if (bt7.Text.Equals(tip1))
+                Console.WriteLine("entrou3");
+                if (bt7.Text.Equals(""))
+                {
+
+                }
+                else if (bt7.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -345,7 +359,12 @@ namespace frm_JogoVelha
             }
             else if ((bt1.Text.Equals(bt4.Text)) && (bt4.Text.Equals(bt7.Text)))
             {
-                if (bt1.Text.Equals(tip1))
+                Console.WriteLine("entrou4");
+                if (bt1.Text.Equals(""))
+                {
+
+                }
+                else if (bt1.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -360,7 +379,13 @@ namespace frm_JogoVelha
             }
             else if ((bt2.Text.Equals(bt5.Text)) && (bt5.Text.Equals(bt8.Text)))
             {
-                if (bt2.Text.Equals(tip1))
+                Console.WriteLine("entrou5");
+
+                if (bt2.Text.Equals(""))
+                {
+
+                }
+                else if (bt2.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -375,7 +400,13 @@ namespace frm_JogoVelha
             }
             else if ((bt3.Text.Equals(bt6.Text)) && (bt6.Text.Equals(bt9.Text)))
             {
-                if (bt3.Text.Equals(tip1))
+                Console.WriteLine("entrou6");
+
+                if (bt3.Text.Equals(""))
+                {
+
+                }
+                else if (bt3.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -390,7 +421,13 @@ namespace frm_JogoVelha
             }
             else if ((bt1.Text.Equals(bt5.Text)) && (bt5.Text.Equals(bt9.Text)))
             {
-                if (bt1.Text.Equals(tip1))
+                Console.WriteLine("entrou7");
+
+                if (bt1.Text.Equals(""))
+                {
+
+                }
+                else if (bt1.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
@@ -405,7 +442,12 @@ namespace frm_JogoVelha
             }
             else if ((bt3.Text.Equals(bt5.Text)) && (bt5.Text.Equals(bt7.Text)))
             {
-                if (bt3.Text.Equals(tip1))
+                Console.WriteLine("entrou8");
+                if (bt3.Text.Equals(""))
+                {
+
+                }
+                else if (bt3.Text.Equals(tip1))
                 {
                     Pjogador1++;
                     lb_pl1.Text = Pjogador1.ToString();
