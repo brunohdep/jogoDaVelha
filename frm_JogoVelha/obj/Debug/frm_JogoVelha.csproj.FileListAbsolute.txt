@@ -8,3 +8,13 @@ C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\frm_JogoVelha\obj\Debug\frm_J
 C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.csproj.CoreCompileInputs.cache
 C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.exe
 C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.pdb
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\bin\Debug\frm_JogoVelha.exe.config
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\bin\Debug\frm_JogoVelha.exe
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\bin\Debug\frm_JogoVelha.pdb
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.csprojResolveAssemblyReference.cache
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.frm_jogoDaVelha.resources
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.Properties.Resources.resources
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.csproj.GenerateResource.Cache
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.exe
+C:\Users\Bruno Henrique\source\repos\frm_JogoVelha\jogoDaVelha\frm_JogoVelha\obj\Debug\frm_JogoVelha.pdb

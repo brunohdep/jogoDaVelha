@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button bt3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_jogoDaVelha));
             this.pn_top = new System.Windows.Forms.Panel();
             this.gp_Empate = new System.Windows.Forms.GroupBox();
@@ -36,7 +35,7 @@
             this.bt_sair = new System.Windows.Forms.Button();
             this.bt_reiniciar = new System.Windows.Forms.Button();
             this.bt_iniciar = new System.Windows.Forms.Button();
-            this.gp_opcao = new System.Windows.Forms.GroupBox();
+            this.gb_opcao = new System.Windows.Forms.GroupBox();
             this.rb_O = new System.Windows.Forms.RadioButton();
             this.rb_x = new System.Windows.Forms.RadioButton();
             this.gp_placar = new System.Windows.Forms.GroupBox();
@@ -56,27 +55,14 @@
             this.bt4 = new System.Windows.Forms.Button();
             this.bt2 = new System.Windows.Forms.Button();
             this.bt1 = new System.Windows.Forms.Button();
-            bt3 = new System.Windows.Forms.Button();
+            this.bt3 = new System.Windows.Forms.Button();
             this.pn_top.SuspendLayout();
             this.gp_Empate.SuspendLayout();
-            this.gp_opcao.SuspendLayout();
+            this.gb_opcao.SuspendLayout();
             this.gp_placar.SuspendLayout();
             this.gp_Jogadores.SuspendLayout();
             this.pn_buttom.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bt3
-            // 
-            bt3.BackColor = System.Drawing.Color.Transparent;
-            bt3.Cursor = System.Windows.Forms.Cursors.Hand;
-            bt3.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bt3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            bt3.Image = ((System.Drawing.Image)(resources.GetObject("bt3.Image")));
-            bt3.Location = new System.Drawing.Point(388, 15);
-            bt3.Name = "bt3";
-            bt3.Size = new System.Drawing.Size(83, 66);
-            bt3.TabIndex = 7;
-            bt3.UseVisualStyleBackColor = false;
             // 
             // pn_top
             // 
@@ -87,7 +73,7 @@
             this.pn_top.Controls.Add(this.bt_sair);
             this.pn_top.Controls.Add(this.bt_reiniciar);
             this.pn_top.Controls.Add(this.bt_iniciar);
-            this.pn_top.Controls.Add(this.gp_opcao);
+            this.pn_top.Controls.Add(this.gb_opcao);
             this.pn_top.Controls.Add(this.gp_placar);
             this.pn_top.Controls.Add(this.gp_Jogadores);
             this.pn_top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -152,19 +138,20 @@
             this.bt_iniciar.TabIndex = 2;
             this.bt_iniciar.Text = "Iniciar";
             this.bt_iniciar.UseVisualStyleBackColor = true;
+            this.bt_iniciar.Click += new System.EventHandler(this.bt_iniciar_Click);
             // 
-            // gp_opcao
+            // gb_opcao
             // 
-            this.gp_opcao.BackColor = System.Drawing.Color.Transparent;
-            this.gp_opcao.Controls.Add(this.rb_O);
-            this.gp_opcao.Controls.Add(this.rb_x);
-            this.gp_opcao.Font = new System.Drawing.Font("Bauhaus 93", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gp_opcao.Location = new System.Drawing.Point(12, 143);
-            this.gp_opcao.Name = "gp_opcao";
-            this.gp_opcao.Size = new System.Drawing.Size(161, 74);
-            this.gp_opcao.TabIndex = 1;
-            this.gp_opcao.TabStop = false;
-            this.gp_opcao.Text = "Opções";
+            this.gb_opcao.BackColor = System.Drawing.Color.Transparent;
+            this.gb_opcao.Controls.Add(this.rb_O);
+            this.gb_opcao.Controls.Add(this.rb_x);
+            this.gb_opcao.Font = new System.Drawing.Font("Bauhaus 93", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_opcao.Location = new System.Drawing.Point(12, 143);
+            this.gb_opcao.Name = "gb_opcao";
+            this.gb_opcao.Size = new System.Drawing.Size(161, 74);
+            this.gb_opcao.TabIndex = 1;
+            this.gb_opcao.TabStop = false;
+            this.gb_opcao.Text = "Opções";
             // 
             // rb_O
             // 
@@ -272,13 +259,13 @@
             // 
             // pn_buttom
             // 
+            this.pn_buttom.Controls.Add(this.bt3);
             this.pn_buttom.Controls.Add(this.bt9);
             this.pn_buttom.Controls.Add(this.bt8);
             this.pn_buttom.Controls.Add(this.bt7);
             this.pn_buttom.Controls.Add(this.bt6);
             this.pn_buttom.Controls.Add(this.bt5);
             this.pn_buttom.Controls.Add(this.bt4);
-            this.pn_buttom.Controls.Add(bt3);
             this.pn_buttom.Controls.Add(this.bt2);
             this.pn_buttom.Controls.Add(this.bt1);
             this.pn_buttom.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -293,6 +280,7 @@
             // 
             this.bt9.BackColor = System.Drawing.Color.Transparent;
             this.bt9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt9.Enabled = false;
             this.bt9.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt9.Image = ((System.Drawing.Image)(resources.GetObject("bt9.Image")));
@@ -306,6 +294,7 @@
             // 
             this.bt8.BackColor = System.Drawing.Color.Transparent;
             this.bt8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt8.Enabled = false;
             this.bt8.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt8.Image = ((System.Drawing.Image)(resources.GetObject("bt8.Image")));
@@ -319,6 +308,7 @@
             // 
             this.bt7.BackColor = System.Drawing.Color.Transparent;
             this.bt7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt7.Enabled = false;
             this.bt7.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt7.Image = ((System.Drawing.Image)(resources.GetObject("bt7.Image")));
@@ -332,6 +322,7 @@
             // 
             this.bt6.BackColor = System.Drawing.Color.Transparent;
             this.bt6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt6.Enabled = false;
             this.bt6.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt6.Image = ((System.Drawing.Image)(resources.GetObject("bt6.Image")));
@@ -345,6 +336,7 @@
             // 
             this.bt5.BackColor = System.Drawing.Color.Transparent;
             this.bt5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt5.Enabled = false;
             this.bt5.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt5.Image = ((System.Drawing.Image)(resources.GetObject("bt5.Image")));
@@ -358,6 +350,7 @@
             // 
             this.bt4.BackColor = System.Drawing.Color.Transparent;
             this.bt4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt4.Enabled = false;
             this.bt4.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt4.Image = ((System.Drawing.Image)(resources.GetObject("bt4.Image")));
@@ -371,6 +364,7 @@
             // 
             this.bt2.BackColor = System.Drawing.Color.Transparent;
             this.bt2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt2.Enabled = false;
             this.bt2.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt2.Image = global::frm_JogoVelha.Properties.Resources.bota;
@@ -384,6 +378,7 @@
             // 
             this.bt1.BackColor = System.Drawing.Color.Transparent;
             this.bt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt1.Enabled = false;
             this.bt1.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt1.Image = global::frm_JogoVelha.Properties.Resources.bota;
@@ -393,7 +388,21 @@
             this.bt1.TabIndex = 5;
             this.bt1.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // bt3
+            // 
+            this.bt3.BackColor = System.Drawing.Color.Transparent;
+            this.bt3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt3.Enabled = false;
+            this.bt3.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt3.Image = global::frm_JogoVelha.Properties.Resources.bota;
+            this.bt3.Location = new System.Drawing.Point(388, 15);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(83, 66);
+            this.bt3.TabIndex = 14;
+            this.bt3.UseVisualStyleBackColor = false;
+            // 
+            // frm_jogoDaVelha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -405,15 +414,15 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frm_jogoDaVelha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jogo da Velha";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.pn_top.ResumeLayout(false);
             this.gp_Empate.ResumeLayout(false);
             this.gp_Empate.PerformLayout();
-            this.gp_opcao.ResumeLayout(false);
-            this.gp_opcao.PerformLayout();
+            this.gb_opcao.ResumeLayout(false);
+            this.gb_opcao.PerformLayout();
             this.gp_placar.ResumeLayout(false);
             this.gp_placar.PerformLayout();
             this.gp_Jogadores.ResumeLayout(false);
@@ -429,7 +438,7 @@
         private System.Windows.Forms.Panel pn_buttom;
         private System.Windows.Forms.GroupBox gp_placar;
         private System.Windows.Forms.GroupBox gp_Jogadores;
-        private System.Windows.Forms.GroupBox gp_opcao;
+        private System.Windows.Forms.GroupBox gb_opcao;
         private System.Windows.Forms.Label lb_pl2;
         private System.Windows.Forms.Label lb_pl1;
         private System.Windows.Forms.Label lb_jogador2;
@@ -451,6 +460,7 @@
         private System.Windows.Forms.Button bt1;
         private System.Windows.Forms.GroupBox gp_Empate;
         private System.Windows.Forms.Label lb_empate;
+        private System.Windows.Forms.Button bt3;
     }
 }
 
