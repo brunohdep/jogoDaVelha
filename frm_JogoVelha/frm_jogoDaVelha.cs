@@ -30,6 +30,10 @@ namespace frm_JogoVelha
             {
                 e.Cancel = true;
             }
+            else
+            {
+                Limpar();
+            }
         }
 
         private void bt1_Click(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace frm_JogoVelha
                 bt1.Text = jogada;
                 bt1.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -53,7 +57,7 @@ namespace frm_JogoVelha
                 bt1.Text = jogada;
                 bt1.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -69,7 +73,7 @@ namespace frm_JogoVelha
                 bt2.Text = jogada;
                 bt2.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -81,7 +85,7 @@ namespace frm_JogoVelha
                 bt2.Text = jogada;
                 bt2.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -97,7 +101,7 @@ namespace frm_JogoVelha
                 bt3.Text = jogada;
                 bt3.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -109,7 +113,7 @@ namespace frm_JogoVelha
                 bt3.Text = jogada;
                 cont++;
                 bt3.Enabled = false;
-                if (cont >5)
+                if (cont >4)
                 {
                     Vencedor();
                 }
@@ -125,7 +129,7 @@ namespace frm_JogoVelha
                 bt4.Text = jogada;
                 bt4.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -137,7 +141,7 @@ namespace frm_JogoVelha
                 bt4.Text = jogada;
                 bt4.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -154,7 +158,7 @@ namespace frm_JogoVelha
                 bt5.Text = jogada;
                 bt5.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -166,7 +170,7 @@ namespace frm_JogoVelha
                 bt5.Text = jogada;
                 bt5.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -183,7 +187,7 @@ namespace frm_JogoVelha
                 bt6.Text = jogada;
                 bt6.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -195,7 +199,7 @@ namespace frm_JogoVelha
                 bt6.Text = jogada;
                 bt6.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -211,7 +215,7 @@ namespace frm_JogoVelha
                 bt7.Text = jogada;
                 bt7.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -223,7 +227,7 @@ namespace frm_JogoVelha
                 bt7.Text = jogada;
                 bt7.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -239,7 +243,7 @@ namespace frm_JogoVelha
                 bt8.Text = jogada;
                 bt8.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -251,7 +255,7 @@ namespace frm_JogoVelha
                 bt8.Text = jogada;
                 bt8.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -267,7 +271,7 @@ namespace frm_JogoVelha
                 bt9.Text = jogada;
                 bt9.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -279,7 +283,7 @@ namespace frm_JogoVelha
                 bt9.Text = jogada;
                 bt9.Enabled = false;
                 cont++;
-                if (cont > 5)
+                if (cont > 4)
                 {
                     Vencedor();
                 }
@@ -313,7 +317,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -333,7 +337,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -353,7 +357,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -373,7 +377,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -394,7 +398,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -415,7 +419,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -436,7 +440,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -456,7 +460,7 @@ namespace frm_JogoVelha
                 else
                 {
                     Pjogador2++;
-                    lb_pl1.Text = Pjogador2.ToString();
+                    lb_pl2.Text = Pjogador2.ToString();
                     Venceu(Njogador2);
                 }
             }
@@ -519,6 +523,17 @@ namespace frm_JogoVelha
         }
         public void Reiniciar()
         {
+            tb_jogador1.Visible = true;
+            tb_jogador2.Visible = true;
+            gb_opcao.Enabled = true;
+            Pjogador1 = 0;
+            Pjogador2 = 0;
+            empates = 0;
+            lb_jogador1.Text = "";
+            lb_jogador2.Text = "";
+            lb_pl1.Text = "0";
+            lb_pl2.Text = "0";
+            lb_empate.Text = "0";
             Limpar();
             HabilitarBotoes();
         }
