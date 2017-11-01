@@ -127,6 +127,7 @@
             this.bt_reiniciar.TabIndex = 3;
             this.bt_reiniciar.Text = "Reiniciar";
             this.bt_reiniciar.UseVisualStyleBackColor = true;
+            this.bt_reiniciar.Click += new System.EventHandler(this.bt_reiniciar_Click);
             // 
             // bt_iniciar
             // 
@@ -280,7 +281,6 @@
             // 
             this.bt9.BackColor = System.Drawing.Color.Transparent;
             this.bt9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt9.Enabled = false;
             this.bt9.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt9.Image = ((System.Drawing.Image)(resources.GetObject("bt9.Image")));
@@ -289,12 +289,12 @@
             this.bt9.Size = new System.Drawing.Size(83, 66);
             this.bt9.TabIndex = 13;
             this.bt9.UseVisualStyleBackColor = false;
+            this.bt9.Click += new System.EventHandler(this.bt9_Click);
             // 
             // bt8
             // 
             this.bt8.BackColor = System.Drawing.Color.Transparent;
             this.bt8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt8.Enabled = false;
             this.bt8.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt8.Image = ((System.Drawing.Image)(resources.GetObject("bt8.Image")));
@@ -303,12 +303,12 @@
             this.bt8.Size = new System.Drawing.Size(83, 66);
             this.bt8.TabIndex = 12;
             this.bt8.UseVisualStyleBackColor = false;
+            this.bt8.Click += new System.EventHandler(this.bt8_Click);
             // 
             // bt7
             // 
             this.bt7.BackColor = System.Drawing.Color.Transparent;
             this.bt7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt7.Enabled = false;
             this.bt7.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt7.Image = ((System.Drawing.Image)(resources.GetObject("bt7.Image")));
@@ -317,12 +317,12 @@
             this.bt7.Size = new System.Drawing.Size(83, 66);
             this.bt7.TabIndex = 11;
             this.bt7.UseVisualStyleBackColor = false;
+            this.bt7.Click += new System.EventHandler(this.bt7_Click);
             // 
             // bt6
             // 
             this.bt6.BackColor = System.Drawing.Color.Transparent;
             this.bt6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt6.Enabled = false;
             this.bt6.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt6.Image = ((System.Drawing.Image)(resources.GetObject("bt6.Image")));
@@ -331,12 +331,12 @@
             this.bt6.Size = new System.Drawing.Size(83, 66);
             this.bt6.TabIndex = 10;
             this.bt6.UseVisualStyleBackColor = false;
+            this.bt6.Click += new System.EventHandler(this.bt6_Click);
             // 
             // bt5
             // 
             this.bt5.BackColor = System.Drawing.Color.Transparent;
             this.bt5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt5.Enabled = false;
             this.bt5.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt5.Image = ((System.Drawing.Image)(resources.GetObject("bt5.Image")));
@@ -345,12 +345,12 @@
             this.bt5.Size = new System.Drawing.Size(83, 66);
             this.bt5.TabIndex = 9;
             this.bt5.UseVisualStyleBackColor = false;
+            this.bt5.Click += new System.EventHandler(this.bt5_Click);
             // 
             // bt4
             // 
             this.bt4.BackColor = System.Drawing.Color.Transparent;
             this.bt4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt4.Enabled = false;
             this.bt4.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt4.Image = ((System.Drawing.Image)(resources.GetObject("bt4.Image")));
@@ -359,12 +359,12 @@
             this.bt4.Size = new System.Drawing.Size(83, 66);
             this.bt4.TabIndex = 8;
             this.bt4.UseVisualStyleBackColor = false;
+            this.bt4.Click += new System.EventHandler(this.bt4_Click);
             // 
             // bt2
             // 
             this.bt2.BackColor = System.Drawing.Color.Transparent;
             this.bt2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt2.Enabled = false;
             this.bt2.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt2.Image = global::frm_JogoVelha.Properties.Resources.bota;
@@ -373,12 +373,12 @@
             this.bt2.Size = new System.Drawing.Size(83, 66);
             this.bt2.TabIndex = 6;
             this.bt2.UseVisualStyleBackColor = false;
+            this.bt2.Click += new System.EventHandler(this.bt2_Click);
             // 
             // bt1
             // 
             this.bt1.BackColor = System.Drawing.Color.Transparent;
             this.bt1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt1.Enabled = false;
             this.bt1.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt1.Image = global::frm_JogoVelha.Properties.Resources.bota;
@@ -387,12 +387,12 @@
             this.bt1.Size = new System.Drawing.Size(83, 66);
             this.bt1.TabIndex = 5;
             this.bt1.UseVisualStyleBackColor = false;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
             // bt3
             // 
             this.bt3.BackColor = System.Drawing.Color.Transparent;
             this.bt3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt3.Enabled = false;
             this.bt3.Font = new System.Drawing.Font("Bauhaus 93", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bt3.Image = global::frm_JogoVelha.Properties.Resources.bota;
@@ -401,6 +401,7 @@
             this.bt3.Size = new System.Drawing.Size(83, 66);
             this.bt3.TabIndex = 14;
             this.bt3.UseVisualStyleBackColor = false;
+            this.bt3.Click += new System.EventHandler(this.bt3_Click);
             // 
             // frm_jogoDaVelha
             // 
